@@ -1,22 +1,38 @@
-<template>
-  <div :class="['iconfont', name.startsWith('icon') ? name : `icon${name}`]" :style="{ color, fontSize: size + 'px' }"></div>
-</template>
-
 <script>
 export default {
   props: {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     color: {
       type: String,
-      default: '#fff'
+      default: '#fff',
     },
     size: {
-      type: [ String, Number ],
-      default: 12
-    }
+      type: [String, Number],
+      default: 12,
+    },
+    tag: {
+      type: String,
+      default: 'div',
+    },
+    class: {
+      type: String,
+      default: '',
+    },
+    style: {
+      type: Object,
+      default: {},
+    },
+  },
+  setup(props) {
+    return () => (
+      <props.tag
+        className={`iconfont ${props.name.startsWith('icon') ? props.name : `icon${props.name}`} ${props.class}`}
+        style={{ color: props.color, fontSize: props.size + 'px', ...props.style }}
+      ></props.tag>
+    )
   },
 }
 </script>
