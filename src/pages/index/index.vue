@@ -1,26 +1,34 @@
 <template>
-  <div>
-    首页
-    <a-switch checked-children="开" un-checked-children="关" v-model:checked="checked1" />
-    <iconfont name="home" color="#000" size="32" />
+  <div class="common-container home-container">
+    <div class="content">
+      <img class="img" :src="require('@/assets/images/logo.png')" alt="" />
+      <div class="text">Welcome to my Website Library</div>
+    </div>
   </div>
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
-import Iconfont from '_c/iconfont'
-export default defineComponent({
+export default {
   name: 'home',
-  components: {
-    Iconfont
-  },
-  setup() {
-    return {
-      checked1: ref(false),
-    }
-  },
-})
+}
 </script>
 
 <style scoped lang="less">
+.home-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img {
+      width: 50%;
+    }
+    .text {
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
+}
 </style>
