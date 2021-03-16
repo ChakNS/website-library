@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="home" unicode="&#59303;" d="M556.586667 736.64l288.490666-183.914667A64 64 0 0 0 874.666667 498.752v-392.746667a64 64 0 0 0-64-64H555.456l0.021333 196.992H490.666667v-196.992H234.666667a64 64 0 0 0-64 64v398.293334a64 64 0 0 0 30.272 54.4l287.530666 178.346666a64 64 0 0 0 68.138667-0.426666zM810.666667 105.984V498.773333L522.197333 682.666667 234.666667 504.32v-398.336h192v197.013333h192.810666v-196.992H810.666667z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="shouqi" unicode="&#59347;" d="M853.333333 181.333333v-64H170.666667v64h682.666666zM320 490.666667v-213.333334l-149.333333 106.666667 149.333333 106.666667z m533.333333-85.333334v-64H405.333333v64h448z m0 234.666667v-64H170.666667v64h682.666666z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="zhankai" unicode="&#59348;" d="M853.333333 170.965333v-64H170.666667v64h682.666666z m-149.333333 309.333334l149.333333-106.666667-149.333333-106.666667v213.333334z m-85.333333-74.666667v-64H170.666667v64h448zM853.333333 640v-64H170.666667v64h682.666666z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

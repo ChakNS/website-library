@@ -5,7 +5,7 @@
       <!-- logo图标 -->
       <div class="logo">
         <div class="logo-container">
-          <img src="../../assets/logo.png" alt="logo" />
+          <img :src="require('@/assets/images/logo.png')" alt="logo" />
         </div>
         <span :class="[ `logo-text-${ collapsed ? 'hide' : 'show' }`, `${ theme }-color` ]">Website Library</span>
       </div>
@@ -45,9 +45,12 @@
 </template>
 <script>
 import { defineComponent, reactive, toRefs } from 'vue'
-import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons-vue'
+import { MenuUnfoldOutlined, MenuFoldOutlined, UserOutlined, VideoCameraOutlined, UploadOutlined } from '@ant-design/icons-vue'
 export default defineComponent({
   components: {
+    UserOutlined,
+    VideoCameraOutlined,
+    UploadOutlined,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
   },
