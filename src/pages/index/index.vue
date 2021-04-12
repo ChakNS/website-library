@@ -8,8 +8,17 @@
 </template>
 
 <script>
+import Users from '@/api/users'
 export default {
   name: 'home',
+  async created () {
+    await this.getList()
+  },
+  methods: {
+    getList () {
+      return Users.User_List().then(res => res)
+    }
+  }
 }
 </script>
 
