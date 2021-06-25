@@ -78,7 +78,7 @@ export default defineComponent({
         target = state.menuList.find(item => item.menuId == key)
         state.currTopMenu = target && target.children && target.children.length ? target.children : [target]
         state.activeSecondary = [state.currTopMenu[0].menuId + '']
-        router.push(state.currTopMenu[0].name)
+        router.push({ name: state.currTopMenu[0].name })
       } else {
         target = state.currTopMenu.find(item => item.menuId == key)
         router.push(target.name)
@@ -111,6 +111,9 @@ export default defineComponent({
         margin-top: 0;
       }
     }
+  }
+  /deep/ .ant-layout-sider-children {
+    position: fixed;
   }
   .menu-text-show {
     opacity: 1;
@@ -154,6 +157,8 @@ export default defineComponent({
   }
 }
 .main-header {
+  position: fixed;
+  width: calc(100% - 215px);
   display: flex;
   background: rgb(255, 255, 255);
   padding: 0px;
@@ -184,6 +189,7 @@ export default defineComponent({
 }
 .main-content {
   padding: 16px;
+  padding-top: 80px;
   background: rgb(255, 255, 255);
   min-height: calc(100vh - 64px);
 }

@@ -1,11 +1,14 @@
-import { createApp } from 'vue';
+import { createApp } from 'vue'
 import router from './router'
 import store from './store'
-import App from "./App.vue";
-import Antd from "ant-design-vue";
-import "ant-design-vue/dist/antd.css"
+import App from './App.vue'
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
 import '@/assets/icon/iconfont.css'
-const app = createApp(App);
-app.config.productionTip = false;
-app.use(Antd).use(router).use(store);
-app.mount("#app");
+const app = createApp(App)
+app.config.productionTip = false
+app
+  .use(Antd)
+  .use(router)
+  .use(store)
+app.mount('#app')
