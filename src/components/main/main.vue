@@ -12,7 +12,7 @@
       <!-- logo图标 -->
       <div class="logo">
         <div class="logo-container">
-          <img :src="require('@/assets/images/logo.png')" alt="logo" />
+          <img src="@/assets/images/logo.png" alt="logo" />
         </div>
         <span :class="[`logo-text-${collapsed ? 'hide' : 'show'}`, `${theme}-color`]">Website Library</span>
       </div>
@@ -55,7 +55,7 @@ import Iconfont from '_c/iconfont'
 import Menu from '@/config/menu'
 export default defineComponent({
   components: {
-    Iconfont,
+    Iconfont
   },
   setup() {
     const router = useRouter()
@@ -65,7 +65,7 @@ export default defineComponent({
       collapsed: false,
       theme: 'light',
       menuList: Menu,
-      currTopMenu: [],
+      currTopMenu: []
     })
     // 改变主题
     const changeTheme = checked => {
@@ -96,9 +96,9 @@ export default defineComponent({
     return {
       ...toRefs(state),
       changeTheme,
-      handleNavigate,
+      handleNavigate
     }
-  },
+  }
 })
 </script>
 <style lang="less" scoped>

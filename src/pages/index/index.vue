@@ -1,7 +1,7 @@
 <template>
   <div class="common-container home-container">
     <div class="content">
-      <img class="img" :src="require('@/assets/images/logo.png')" alt="" />
+      <img class="img" src="@/assets/images/logo.png" alt="" />
       <div class="text">Welcome to my Website Library</div>
     </div>
   </div>

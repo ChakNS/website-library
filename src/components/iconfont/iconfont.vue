@@ -1,41 +1,42 @@
-<script>
-export default {
+<script lang="jsx">
+import { defineComponent } from 'vue'
+export default defineComponent({
   props: {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     color: {
       type: String,
-      default: '#fff',
+      default: '#fff'
     },
     size: {
       type: [String, Number],
-      default: 12,
+      default: 12
     },
     tag: {
       type: String,
-      default: 'div',
+      default: 'div'
     },
     class: {
       type: String,
-      default: '',
+      default: ''
     },
     style: {
       type: Object,
-      default: {},
-    },
+      default: {}
+    }
   },
   setup(props) {
     return () => (
-      <props.tag
-        className={`iconfont ${props.name.startsWith('icon') ? props.name : `icon${props.name}`} ${props.class}`}
-        style={{ color: props.color, fontSize: props.size + 'px', ...props.style }}
-      ></props.tag>
+      <>
+        <props.tag
+          className={`iconfont ${props.name.startsWith('icon') ? props.name : `icon${props.name}`} ${props.class}`}
+          style={{ color: props.color, fontSize: props.size + 'px', ...props.style }}></props.tag>
+      </>
     )
-  },
-}
+  }
+})
 </script>
 
-<style lang="less" scoped>
-</style>
+<style lang="less" scoped></style>
