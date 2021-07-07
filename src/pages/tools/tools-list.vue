@@ -12,7 +12,8 @@
 import Users from '@/api/users'
 import { ToolsList } from './config'
 import ToolsItem from './components/toolsItem'
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: 'home',
   components: {
     ToolsItem
@@ -30,7 +31,7 @@ export default {
       return Users.User_List().then(res => res)
     }
   }
-}
+})
 </script>
 
 <style scoped lang="less">

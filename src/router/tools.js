@@ -10,7 +10,7 @@ export default [
       {
         path: 'list',
         name: 'tools-list',
-        component: () => import(/* webpackChunkName: "index" */ '@/pages/tools/tools-list')
+        component: () => import(/* webpackChunkName: "index" */ '@/pages/tools/tools-list.vue')
       },
       {
         path: 'decode',
